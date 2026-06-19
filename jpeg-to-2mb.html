@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Compress image to 2048KB (2MB) online for free. Reduce JPG, JPEG and PNG image size while maintaining near-original image quality. Fast, secure and easy to use.">
+<meta name="keywords" content="compress image to 2mb, image compressor 2mb, reduce image size to 2mb, photo compressor 2mb, jpg to 2mb, jpeg to 2mb">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Compress Image to 2048KB Online Free | 2MB Image Compressor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<div class="logo" >QuickTools</div>
+
+<div class="title">JPEG to 1MB </div>
+
+
+<div class="menu-toggle" id="menu-toggle">☰</div>
+
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+
+<li id="tools-menu">
+<span>Tools ▼</span>
+<div class="dropdown">
+<a href="./ImageCompressor.html">Image Compressor</a>
+<a href="./jpeg-to-10kb.html">Jpeg to 10KB</a>
+<a href="./jpeg-to-20kb.html">Jpeg to 20KB</a>
+<a href="./jpeg-to-50kb.html">Jpeg to 50KB</a>
+<a href="./jpeg-to-100kb.html">Jpeg to 100KB</a>
+<a href="./jpeg-to-200kb.html">Jpeg to 200KB</a>
+</div>
+</li>
+
+<li><a href="#about">About</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav>
+
+<main>
+
+
+<!-- HERO TOOL SECTION -->
+<div id="home" class="section hero">
+<h1 style="margin:0;">Compress Image to 2MB Online</h1>
+<p class="text"> A 2048KB image size (2MB) is ideal for high-resolution photos, professional photography, graphic design projects, portfolios, print-ready images, and detailed visual content. It preserves maximum image quality and fine details while keeping the file size suitable for uploads, sharing, and storage.
+
+</p>
+
+<div class="tool-box">
+
+<!-- Drag & Drop Box -->
+<div id="dropArea" style="border:2px dashed #94a3b8;padding:30px;border-radius:10px;text-align:center;background:#f8fafc;cursor:pointer;">
+<p style="color:#555;font-size:14px;">Select or Drag & Drop JPEG Images Here</p>
+<input type="file" id="upload" accept="image/*" style="display:none;">
+<button onclick="event.stopPropagation(); document.getElementById('upload').click()" style="margin-top:10px;background:#22c55e;color:#fff;">Select Image</button>
+</div>
+
+<br>
+
+
+<!-- Preview Image -->
+<div>
+<img id="preview" style="display:none;">
+</div>
+
+
+
+<!-- Controls (after preview) -->
+<div id="controls" style="display:none;margin-top:10px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+<input type="number" id="targetSize" value="2048" placeholder="Size (KB)" readonly style="padding:8px;border-radius:6px;border:1px solid #ccc;width:120px;">
+<button onclick="compressImage()">Compress</button>
+</div>
+
+<!-- Download -->
+<a id="downloadLink" download="compressed.jpg" style="display:none;">
+<button style="margin-top:10px;">Download</button>
+</a>
+
+
+<br>
+
+
+<!-- Controls below image -->
+<!-- <div id="controls" style="display:none;margin-top:10px;gap:10px;justify-content:center;flex-wrap:wrap;">
+    <input type="number" id="targetSize" placeholder="Size (KB)" style="padding:8px;border-radius:6px;border:1px solid #ccc;width:120px;">
+    <button onclick="compressImage()">Compress</button>
+</div> -->
+
+<a id="downloadLink" download="compressed.jpg" style="display:none;">
+    <button style="margin-top:10px;">Download</button>
+</a>
+</div>
+
+</div>
+
+<!-- Ad Container
+<div style="max-width:800px;margin:0 auto;background:#e5e7eb;height:200px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#555;">
+Advertisement Space
+</div> -->
+
+<!-- Why Use  -->
+
+<div class="why-section">
+<h1>Why Use Image Compression?</h1>
+<p class="text">
+Image compression helps reduce file size without significantly affecting visual quality. Smaller images load faster, use less storage space, improve website performance, and make file uploads quicker and easier.
+</p>
+
+<div class="size-grid">
+<div class="size-btn"> 🖼️ High Image Quality</div>
+<div class="size-btn">💼 Perfect for Professional Use</div>
+<div class="size-btn">⚡ Fast Compression</div>
+<div class="size-btn">🔒 Secure Processing</div>
+</div>
+</div>
+<br><br>
+
+
+<!-- Section 2 Code Start  -->
+<div class="section2" id="sizes">
+<h1 style="margin:0;">Compress Image to Different Sizes</h1>
+<p class="text">
+We offer a variety of options for compressing your image to any size. Simply choose one from the list below.
+</p>
+
+<div class="size-grid">
+<a href="./jpeg-to-10kb.html"><button class="size-btn">10kb</button></a>
+<a href="./jpeg-to-20kb.html"><button class="size-btn">20kb</button></a>
+<a href="./jpeg-to-40kb.html"><button class="size-btn">40kb</button></a>
+<a href="./jpeg-to-50kb.html"><button class="size-btn">50kb</button></a>
+<a href="./jpeg-to-100kb.html"><button class="size-btn">100kb</button></a>
+<a href="./jpeg-to-150kb.html"><button class="size-btn">150kb</button></a>
+<a href="./jpeg-to-200kb.html"><button class="size-btn">200kb</button></a>
+<a href="./jpeg-to-300kb.html"><button class="size-btn">300kb</button></a>
+<a href="./jpeg-to-400kb.html"><button class="size-btn">400kb</button></a>
+<a href="./jpeg-to-500kb.html"><button class="size-btn">500kb</button></a>
+<a href="./jpeg-to-1mb.html"><button class="size-btn">1mb</button></a>
+<a href="./jpeg-to-2mb.html"><button class="size-btn">2mb</button></a>
+</div>
+</div>
+
+<br><br>
+
+<!-- ABOUT SECTION -->
+<div id="about" class="abt_section">
+<h1 style="margin:0;">About QuickTools</h1>
+<p class="text">
+QuickTools is a powerful online platform that provides multiple utilities to make your digital work faster, easier, and more efficient. Whether you are a student, developer, or regular user, QuickTools helps you perform tasks like compressing images, converting formats, and managing files without installing any software.
+<br><br>
+Our goal is to provide simple, fast, and free tools that anyone can use without technical knowledge. The platform is designed with a clean interface, smooth performance, and high-quality output.
+</p>
+<br><br>
+<h2>Tools We Provide</h2>
+<ul class="list">
+<li>Image Compressor</li>
+<li>JPEG to 10KB Compressor</li>
+<li>JPEG to 20KB Compressor</li>
+<li>JPEG to 40KB Compressor</li>
+<li>JPEG to 50KB Compressor</li>
+<li>JPEG to 100KB Compressor</li>
+<li>JPEG to 150KB Compressor</li>
+<li>JPEG to 200KB Compressor</li>
+<li>JPEG to 500KB Compressor</li>
+</ul>
+<br><br>
+<h2>Detailed Tool Explanation</h2>
+<p class="text">
+<b>Image Compressor:</b> This tool reduces the file size of your images while maintaining good visual quality. It is ideal for faster website loading, social media uploads, and saving storage space. You can also set a custom target size in KB.
+<br><br>
+
+<b>JPG to 10KB:</b> This tool compresses JPEG images to exactly 10KB or less. It is commonly used for government forms, job applications, and online submissions where strict file size limits are required.
+<br><br>
+
+<b>JPEG to 20KB:</b> Compress your images to 20KB without losing too much quality. Perfect for profile pictures, ID uploads, and online forms.
+<br><br>
+
+<b>JPEG to 40KB:</b> Compress JPEG images to 40KB while keeping good image quality. This size is commonly accepted for online forms, exam applications, document uploads, and profile photos where moderate compression is required.
+<br><br>
+
+<b>JPEG to 50KB:</b> This option provides a balance between quality and size. Suitable for websites, blogs, and sharing images online.
+<br><br>
+
+<b>JPEG to 100KB:</b> Maintain higher quality while reducing file size. Ideal for portfolios, presentations, and professional uploads.
+<br><br>
+<b>JPEG to 150KB:</b> Reduce image size to 150KB while preserving more details and clarity. It is suitable for professional documents, resumes, portfolios, website uploads, and high-quality image sharing.
+<br><br>
+
+<b>JPEG to 200KB:</b> Best for high-quality images where some compression is needed but clarity must be preserved.
+<br><br>
+<b>JPEG to 500KB:</b> Compress JPEG images to 500KB while preserving excellent image quality and details. 
+</p>
+<br><br>
+</div>
+
+
+
+
+<!-- Faq  -->
+
+
+<div class="faq-section" id="faq">
+<h2>Frequently Asked Questions</h2>
+
+
+
+<div class="faq-item">
+    <div class="faq-question">How can I compress an image to 2048KB?</div>
+    <div class="faq-answer">
+        Upload your image and click the compress button. The tool automatically optimizes the file size to approximately 2048KB (2MB) while maintaining excellent image quality.
+    </div>
+</div>
+
+
+
+<div class="faq-item">
+    <div class="faq-question">Is 2048KB equal to 2MB?</div>
+    <div class="faq-answer">
+        Yes, 2048KB is equal to 2MB. Both measurements represent the same file size.
+    </div>
+</div>
+
+
+<div class="faq-item">
+    <div class="faq-question">What is the best use for 2MB images?</div>
+    <div class="faq-answer">
+        2MB images are commonly used for professional photography, graphic design projects, portfolios, print materials, presentations, and high-resolution image uploads.
+    </div>
+</div>
+
+
+<div class="faq-item">
+    <div class="faq-question">Is this tool free?</div>
+    <div class="faq-answer">
+        Yes, QuickTools Image Compressor is completely free to use. You don't need to sign up or pay anything.
+    </div>
+</div>
+
+<div class="faq-item">
+    <div class="faq-question">Are my uploaded images secure?</div>
+    <div class="faq-answer">
+        Yes, your images are processed securely, and files are not stored permanently on the server.
+    </div>
+</div>
+
+
+<div class="faq-item">
+    <div class="faq-question">Can I compress images to a specific size?</div>
+    <div class="faq-answer">
+        Yes, you can enter a custom target size like 10KB, 20KB, or 50KB. The tool automatically adjusts compression to match your requirement.
+    </div>
+</div>
+
+</div>
+    
+</main>
+
+
+<footer class="footer">
+
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>QuickTools</h3>
+            <p>Free online tools for image compression, conversion, and optimization. Fast, secure, and mobile friendly.</p>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+         <a href="./contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>More Tools</h3>
+
+            <a href="./jpeg-to-50kb.html">JPEG to 50KB</a>
+            <a href="./jpeg-to-100kb.html">JPEG to 100KB</a>
+            <a href="./jpeg-to-200kb.html">JPEG to 200KB</a>
+        </div>
+
+
+<div class="footer-col">
+<a href="./privacy-policy.html">Privacy Policy</a>
+<a href="t&c.html">Terms & Conditions</a>
+<a href="./disclaimer.html">Disclaimer</a>
+</div>
+    </div>
+
+    <div class="footer-bottom">
+<p>© 2026 QuickTools. All Rights Reserved.</p>
+</div>
+
+<script>
+
+let toggle = document.getElementById("menu-toggle");
+let menu = document.getElementById("menu");
+let toolsMenu = document.getElementById("tools-menu");
+
+toggle.onclick = function(){
+    menu.classList.toggle("active");
+}
+
+toolsMenu.onclick = function(e){
+    if(window.innerWidth <= 950){
+        e.stopPropagation();
+        toolsMenu.classList.toggle("active");
+    }
+}
+
+
+let selectedFile = null;
+
+const uploadInput = document.getElementById('upload');
+
+// 🔥 FIX: clear before selecting (prevents double select issue)
+uploadInput.addEventListener('click', () => {
+    uploadInput.value = null;
+});
+const preview = document.getElementById('preview');
+const downloadLink = document.getElementById('downloadLink');
+
+uploadInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if(!file) return;
+
+    selectedFile = file;
+
+    const reader = new FileReader();
+    reader.onload = function(ev){
+        preview.src = ev.target.result;
+        preview.style.display = 'block';
+        downloadLink.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+
+    
+});
+
+function compressImage(){
+    if(!selectedFile){
+        alert("Upload image first");
+        return;
+    }
+
+    const targetSize = 2048;
+
+    const reader = new FileReader();
+    reader.onload = function(e){
+        const img = new Image();
+        img.src = e.target.result;
+
+        img.onload = function(){
+            let width = img.width;
+            let height = img.height;
+
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            let quality = 0.9;
+            let dataUrl = '';
+            let sizeKB = 0;
+
+            do{
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+
+                dataUrl = canvas.toDataURL('image/jpeg', quality);
+                sizeKB = (dataUrl.length * 3) / 4 / 1024;
+
+                quality -= 0.05;
+                width *= 0.9;
+                height *= 0.9;
+
+            }while(sizeKB > targetSize && quality > 0.05);
+
+            preview.src = dataUrl;
+            downloadLink.href = dataUrl;
+            downloadLink.style.display = 'inline-block';
+        }
+    };
+
+    reader.readAsDataURL(selectedFile);
+}
+
+const dropArea = document.getElementById('dropArea');
+
+
+
+dropArea.addEventListener('dragover', (e) => e.preventDefault());
+
+dropArea.addEventListener('drop', (e) => {
+    e.preventDefault();
+
+    const file = e.dataTransfer.files[0];
+    if(!file) return;
+
+    selectedFile = file;
+
+    const reader = new FileReader();
+    reader.onload = function(ev){
+        preview.src = ev.target.result;
+        preview.style.display = 'block';
+        downloadLink.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+});
+
+
+// faq
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const answer = item.querySelector('.faq-answer');
+
+    item.addEventListener("click", () => {
+ faqItems.forEach(i =>{
+            if(i !== item){
+                i.classList.remove("active")
+
+i.querySelector('.faq-answer').style.maxHeight = null;
+            }
+        })
+        item.classList.toggle("active");
+
+        if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+        } else {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+
+    });
+});
+</script>
+
+</body>
+</html>
