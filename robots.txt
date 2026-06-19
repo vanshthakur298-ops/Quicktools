@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://quicktools-pro.netlify.app/sitemapp.xml
+Sitemap: https://quicktools-pro.netlify.app/sitemap.xml
